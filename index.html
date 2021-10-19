@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>juegos de adivinanza</title>
+</head>
+<body>
+    <script>
+        /*
+        realizar un pequeno juego de preguntas de adivinanza dando tres intento. si logra adivinar mandamos mensaje com
+        felicitación, de no acertar los 3 intenos mandanmos mensaje sd que ha perdido. uso ciclo for.
+        }
+        */
+
+        var respuesta = "TEGICIGALPA";
+        var abierto = false;
+        for(var contador = 1; contador<=3; contador++){
+            var respUsuario = prompt("capital de Hodnduras: ")
+            if(respUsuario.toUpperCase() === respuesta){
+                var acierto = true
+                document.write(`Felicidades, acertastes en el intento ${contador}`)
+                break
+            }
+        }
+        if(acierto=== false){
+            document.write(`lo sentimos, ya no tienes intentos`)
+        }
+    </script>
+</body>
+</html>
